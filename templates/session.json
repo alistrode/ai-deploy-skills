@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "brand": null,
+  "product": null,
+  "selected_capability": null,
+  "target": {"kind": null, "label": null, "os": null, "architecture": null},
+  "route": null,
+  "status": "select-brand",
+  "official_docs": [],
+  "docs_checked_at": null,
+  "install_path": null,
+  "config_paths": [],
+  "backup_paths": [],
+  "stage": null,
+  "completed_steps": [],
+  "pending_operations": [],
+  "artifacts": [],
+  "launch": null,
+  "blocker": null,
+  "next_action": null,
+  "notes": "仅存非敏感恢复信息；不得存密钥、Cookie、密码、验证码、认证头或私密提示词。"
+}

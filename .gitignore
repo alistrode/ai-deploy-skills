@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+session-private/
+work/
+*.log
+*.key
+*.pem
+node_modules/
+.venv/

@@ -1,0 +1,1389 @@
+{
+  "schema_version": 1,
+  "compiled_at": "2026-10-30",
+  "language": "zh-CN",
+  "status_policy": "执行时重新读取官方入口；本清单不宣称所有产品已实机部署。",
+  "brands": [
+    {
+      "id": "openai",
+      "name": "OpenAI / ChatGPT",
+      "summary": "大众助手、办公、编程、浏览器及模型接入",
+      "products": [
+        {
+          "id": "chatgpt",
+          "name": "ChatGPT",
+          "purpose": "问答、学习、写作、搜索",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://chatgpt.com/",
+          "docs": "https://chatgpt.com/overview/",
+          "action": "新建对话；根据用途选择普通聊天或搜索；发送简短请求；需要客户端时从下载入口匹配系统。",
+          "ready": "当前账户返回有效回复，保存入口。",
+          "note": ""
+        },
+        {
+          "id": "chatgpt-work",
+          "name": "ChatGPT Work",
+          "purpose": "长任务与办公交付",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://chatgpt.com/",
+          "docs": "https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex",
+          "action": "进入账户可见的 Work 入口；用虚构数据制作一页工作说明；观察执行过程和文件。",
+          "ready": "文档可打开且能继续编辑；没有权限时记录套餐限制。",
+          "note": ""
+        },
+        {
+          "id": "chatgpt-features",
+          "name": "ChatGPT 研究、图像、语音、学习、Sites/Slides",
+          "purpose": "应用内专项功能",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://chatgpt.com/overview/",
+          "docs": "https://chatgpt.com/overview/",
+          "action": "先按需求选择具体功能；研究看来源，图像预览结果，语音检查输入输出设备，Sites/Slides 打开生成预览；不自动对外发布。",
+          "ready": "所选功能的一个任务完成；每项分别验收，不把聊天成功算成所有功能成功。",
+          "note": ""
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "purpose": "AI 编程代理",
+          "routes": [
+            "CLI",
+            "APP",
+            "EXT",
+            "WEB"
+          ],
+          "entry": "https://developers.openai.com/codex/",
+          "docs": "https://github.com/openai/codex",
+          "action": "阅读当前 CLI/IDE/应用文档；npm 路线见 recipes；完成官方登录，在新临时项目分析一个示例文件。",
+          "ready": "实际任务正常返回，确认工作目录与生成文件。",
+          "note": ""
+        },
+        {
+          "id": "atlas",
+          "name": "ChatGPT Atlas",
+          "purpose": "AI 浏览器",
+          "routes": [
+            "APP"
+          ],
+          "entry": "https://chatgpt.com/atlas/",
+          "docs": "https://chatgpt.com/atlas/",
+          "action": "查看当前支持系统；官方安装并登录；打开公开网页，用侧栏归纳三点。",
+          "ready": "浏览器可重复启动，侧栏产生与该页相关的回答。",
+          "note": "不支持当前系统时直接报告，并提供 ChatGPT 网页作为可选路线而非等价安装。"
+        },
+        {
+          "id": "openai-api",
+          "name": "OpenAI API：文本、推理、图像、转录、TTS、Realtime",
+          "purpose": "开发接入",
+          "routes": [
+            "API"
+          ],
+          "entry": "https://platform.openai.com/",
+          "docs": "https://developers.openai.com/api/docs/models",
+          "action": "选择项目，读取当前模型目录与认证方法；文本使用受支持的 Responses/Chat 接口；媒体和实时音频使用对应官方 SDK 例子。",
+          "ready": "所选模态有实际输出；实时语音需完成连接和音频往返。",
+          "note": ""
+        },
+        {
+          "id": "gpt-oss",
+          "name": "gpt-oss",
+          "purpose": "开放权重语言模型",
+          "routes": [
+            "LOCAL"
+          ],
+          "entry": "https://openai.com/open-models/",
+          "docs": "https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss",
+          "action": "从官方链接进入模型仓库；核对许可证和内存，选择适配版本；按官方支持运行器加载并推理。",
+          "ready": "本地生成回答，记录是否离线、实际后端与模型。",
+          "note": ""
+        },
+        {
+          "id": "whisper",
+          "name": "Whisper",
+          "purpose": "本地语音识别",
+          "routes": [
+            "LOCAL"
+          ],
+          "entry": "https://github.com/openai/whisper",
+          "docs": "https://github.com/openai/whisper",
+          "action": "独立 Python 环境安装官方包与 FFmpeg；按硬件选择模型；准备无隐私的短录音并按 README 转写。",
+          "ready": "产出能打开的转录文本，语言和内容合理。",
+          "note": ""
+        },
+        {
+          "id": "sora",
+          "name": "Sora",
+          "purpose": "历史视频产品",
+          "routes": [
+            "HISTORY"
+          ],
+          "entry": "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation",
+          "docs": "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation",
+          "action": "核对官方结束服务公告；不执行旧安装/API 教程；如用户愿意，推荐其余品牌的视频路线。",
+          "ready": "明确记录已下线，只有用户选定替代产品后才执行替代。",
+          "note": "编写时公告：网页/App 2026-04-26、API 2026-09-24 结束服务。"
+        }
+      ]
+    },
+    {
+      "id": "bytedance",
+      "name": "字节跳动 / 豆包",
+      "summary": "助手、图像视频、工作流、编程和模型平台",
+      "products": [
+        {
+          "id": "doubao",
+          "name": "豆包",
+          "purpose": "大众聊天与多模态助手",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://www.doubao.com/",
+          "docs": "https://www.doubao.com/",
+          "action": "进入官方对话，选择所需语音/图片/文档功能；客户端从官网跳转商店；用轻量样例操作。",
+          "ready": "所选功能有可见结果；语音需设备授权后音频往返。",
+          "note": ""
+        },
+        {
+          "id": "jimeng",
+          "name": "即梦 AI",
+          "purpose": "图片与视频创作",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://jimeng.jianying.com/",
+          "docs": "https://jimeng.jianying.com/",
+          "action": "选图片或视频；输入简单自然风景提示，设置最小可用规格；查看积分后提交一次，查询同一任务至完成。",
+          "ready": "结果可预览；需下载时检查成品文件。",
+          "note": "Seedream/Seedance 是模型线，不能当成即梦客户端安装包。"
+        },
+        {
+          "id": "coze",
+          "name": "扣子（原扣子空间）",
+          "purpose": "任务、办公与 Agent 协作",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://space.coze.cn/space-intro",
+          "docs": "https://www.coze.cn/open/docs/cozespace/overview",
+          "action": "进入官方工作台；选办公或研究任务；使用虚构样例生成一份简短材料；保留项目。",
+          "ready": "产物可打开，任务状态为成功。",
+          "note": ""
+        },
+        {
+          "id": "coze-code",
+          "name": "扣子编程（原扣子开发平台）",
+          "purpose": "应用、智能体、工作流、Skills",
+          "routes": [
+            "WEB"
+          ],
+          "entry": "https://www.coze.cn/",
+          "docs": "https://docs.coze.cn/",
+          "action": "进入编程/开发入口，新建私有草稿；构建输入文本→模型→输出的最小工作流并调试；应用只预览不公开。",
+          "ready": "调试输入输出一致，草稿可再次运行。",
+          "note": ""
+        },
+        {
+          "id": "coze-studio",
+          "name": "Coze Studio 开放项目",
+          "purpose": "自建工作流开发平台",
+          "routes": [
+            "LOCAL"
+          ],
+          "entry": "https://github.com/coze-dev/coze-studio",
+          "docs": "https://github.com/coze-dev/coze-studio",
+          "action": "按当前官方 README 确认支持范围；读部署清单，在独立目录配置 Docker Compose 和私密环境文件；仅回环访问。",
+          "ready": "前后端可访问，配置受支持模型后草稿工作流真正运行。",
+          "note": "开放项目与云端扣子功能不承诺完全一致。"
+        },
+        {
+          "id": "trae",
+          "name": "TRAE IDE / TRAE Code",
+          "purpose": "AI 编程工作区",
+          "routes": [
+            "APP"
+          ],
+          "entry": "https://www.trae.cn/",
+          "docs": "https://docs.trae.cn/ide_get-started-with-trae",
+          "action": "选国内/国际产品渠道，下载安装 IDE；登录，打开临时项目；选择 IDE 或 SOLO 模式完成单文件任务。",
+          "ready": "文件生成、预览或执行成功，保留项目入口。",
+          "note": ""
+        },
+        {
+          "id": "trae-solo",
+          "name": "TRAE SOLO 独立端",
+          "purpose": "任务驱动的工作与开发",
+          "routes": [
+            "APP",
+            "WEB"
+          ],
+          "entry": "https://www.trae.cn/",
+          "docs": "https://www.trae.cn/",
+          "action": "从官网进入 SOLO 独立产品，核对平台和账户；创建研究或简单开发任务；观察任务及产物。",
+          "ready": "任务有可打开结果，区分独立端与 IDE 内 SOLO 模式。",
+          "note": ""
+        },
+        {
+          "id": "ark",
+          "name": "火山方舟",
+          "purpose": "模型体验与 API 平台",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://www.volcengine.com/product/ark",
+          "docs": "https://docs.volcengine.com/docs/ark/model-list",
+          "action": "登录控制台，选区域，进入模型列表/体验中心；获取当前模型 ID 与调用文档，使用对应项目密钥。",
+          "ready": "所选模型实际返回，不把体验中心权限等同 API 权限。",
+          "note": ""
+        },
+        {
+          "id": "seed",
+          "name": "Seed / 豆包通用模型",
+          "purpose": "通用语言、推理和 Agent",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://seed.bytedance.com/zh/models",
+          "docs": "https://seed.bytedance.com/zh/models",
+          "action": "从模型官方页的体验/API 链接进入；读取当前输入格式、模型 ID、配额与计费，执行文本调用；异步任务保留原 ID。",
+          "ready": "相应文本/图像/视频/音频真实返回并可预览。",
+          "note": "声音复刻只使用本人或有授权声音；不把托管模型假称开放权重。"
+        },
+        {
+          "id": "seedream",
+          "name": "Seedream",
+          "purpose": "图像生成与编辑",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://seed.bytedance.com/zh/models",
+          "docs": "https://seed.bytedance.com/zh/models",
+          "action": "从模型官方页的体验/API 链接进入；读取当前输入格式、模型 ID、配额与计费，执行小尺寸图像生成；异步任务保留原 ID。",
+          "ready": "相应文本/图像/视频/音频真实返回并可预览。",
+          "note": "声音复刻只使用本人或有授权声音；不把托管模型假称开放权重。"
+        },
+        {
+          "id": "seedance",
+          "name": "Seedance",
+          "purpose": "视频生成",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://seed.bytedance.com/zh/models",
+          "docs": "https://seed.bytedance.com/zh/models",
+          "action": "从模型官方页的体验/API 链接进入；读取当前输入格式、模型 ID、配额与计费，执行短视频生成；异步任务保留原 ID。",
+          "ready": "相应文本/图像/视频/音频真实返回并可预览。",
+          "note": "声音复刻只使用本人或有授权声音；不把托管模型假称开放权重。"
+        },
+        {
+          "id": "seed-audio",
+          "name": "Seed Audio / SeedTTS / 声音复刻",
+          "purpose": "音频、语音合成与声音",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://seed.bytedance.com/zh/models",
+          "docs": "https://seed.bytedance.com/zh/models",
+          "action": "从模型官方页的体验/API 链接进入；读取当前输入格式、模型 ID、配额与计费，执行使用预设声音合成一句话；异步任务保留原 ID。",
+          "ready": "相应文本/图像/视频/音频真实返回并可预览。",
+          "note": "声音复刻只使用本人或有授权声音；不把托管模型假称开放权重。"
+        },
+        {
+          "id": "seed-realtime",
+          "name": "SeedRealtime",
+          "purpose": "实时音视频交互",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://seed.bytedance.com/zh/models",
+          "docs": "https://seed.bytedance.com/zh/models",
+          "action": "从模型官方页的体验/API 链接进入；读取当前输入格式、模型 ID、配额与计费，执行建立实时会话并做一轮语音交互；异步任务保留原 ID。",
+          "ready": "相应文本/图像/视频/音频真实返回并可预览。",
+          "note": "声音复刻只使用本人或有授权声音；不把托管模型假称开放权重。"
+        }
+      ]
+    },
+    {
+      "id": "alibaba",
+      "name": "阿里巴巴 / 千问",
+      "summary": "大众应用、编程、视觉生成、语音、模型服务与开放权重",
+      "products": [
+        {
+          "id": "qianwen",
+          "name": "千问应用 / Qwen Chat",
+          "purpose": "大众 AI 助手",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://www.qianwen.com/",
+          "docs": "https://qwen.ai/",
+          "action": "官网选择适合地区的入口；登录，选聊天、文档或多模态；按官网提供的客户端下载。",
+          "ready": "所选任务有结果；记录实际账户站点，不假定国内外权益互通。",
+          "note": ""
+        },
+        {
+          "id": "qwen-code",
+          "name": "Qwen Code",
+          "purpose": "开源终端编程代理",
+          "routes": [
+            "CLI"
+          ],
+          "entry": "https://github.com/QwenLM/qwen-code",
+          "docs": "https://github.com/QwenLM/qwen-code",
+          "action": "读当前安装 README；官方 npm 路线见 recipes；运行 qwen 并按当前界面选择 OAuth 或受支持 API；使用临时项目。",
+          "ready": "实际产生可检查的代码/分析，确认所用供应商和额度。",
+          "note": ""
+        },
+        {
+          "id": "qoder",
+          "name": "Qoder / Qoder CN（原灵码相关入口）",
+          "purpose": "AI IDE、CLI 与插件",
+          "routes": [
+            "APP",
+            "CLI",
+            "EXT"
+          ],
+          "entry": "https://qoder.com/",
+          "docs": "https://docs.qoder.com/product-series/quick-start",
+          "action": "先核对国内 qoder.cn/灵码官网的迁移说明；选择 IDE、CLI 或 JetBrains/编辑器插件；按对应文档安装和登录；避免混用地区端点。",
+          "ready": "临时项目单文件任务成功，实际计费渠道清楚。",
+          "note": ""
+        },
+        {
+          "id": "lingma",
+          "name": "通义灵码",
+          "purpose": "编程辅助及旧名称入口",
+          "routes": [
+            "APP",
+            "EXT"
+          ],
+          "entry": "https://lingma.aliyun.com/",
+          "docs": "https://lingma.aliyun.com/",
+          "action": "核对当前页面是否迁移至 Qoder CN；沿官方迁移路径安装；若仍有原插件，核对发行者后启用并登录。",
+          "ready": "当前支持的工具完成代码解释或补全，不安装失效旧包。",
+          "note": ""
+        },
+        {
+          "id": "wanxiang",
+          "name": "通义万相 / Wan 创作平台",
+          "purpose": "图像、视频与视觉创作",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://tongyi.aliyun.com/",
+          "docs": "https://tongyi.aliyun.com/",
+          "action": "进入万相官方产品链接，选图像或视频能力；用最低规格样例生成并等待完成；API 按百炼文档配置。",
+          "ready": "产物可预览，可下载需求另检查文件。",
+          "note": ""
+        },
+        {
+          "id": "tingwu",
+          "name": "通义听悟",
+          "purpose": "音视频转写与会议总结",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://tingwu.aliyun.com/",
+          "docs": "https://help.aliyun.com/zh/tingwu/product-introduction/",
+          "action": "从官方页面进入服务；上传一段自有无隐私的短录音；选择转写/总结并等待；需要 API 时读阿里云接入文档。",
+          "ready": "有可查看文本和摘要，导出需求检查实际文件。",
+          "note": ""
+        },
+        {
+          "id": "bailian",
+          "name": "百炼 / Model Studio / Qwen API",
+          "purpose": "托管模型与应用平台",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://bailian.console.aliyun.com/",
+          "docs": "https://www.alibabacloud.com/help/en/model-studio/",
+          "action": "核对地域，选择项目/空间，开通模型权限；从当前文档获取端点、模型、密钥；区分按量 API 与 Coding Plan；用体验中心或接口调用。",
+          "ready": "模型调用真实成功，应用草稿可重复运行。",
+          "note": ""
+        },
+        {
+          "id": "qwen-general",
+          "name": "Qwen 通用：Max / Plus / Flash / Turbo 与开放模型",
+          "purpose": "通用任务；旗舰/均衡/速度成本定位，以当前目录为准",
+          "routes": [
+            "API",
+            "LOCAL"
+          ],
+          "entry": "https://tongyi.aliyun.com/",
+          "docs": "https://huggingface.co/Qwen",
+          "action": "先选 API 或本地；API 从百炼查当前型号；本地从 Qwen 官方集合进入精确模型卡，核对开放情况、硬件及专用依赖；按照该模态官方样例运行。",
+          "ready": "当前选定型号及模态实际产生有效结果。",
+          "note": "Max/Plus/Flash 等托管型号不保证有同名权重；不可凭名称拼接仓库。"
+        },
+        {
+          "id": "qwen-coder-model",
+          "name": "Qwen-Coder",
+          "purpose": "代码与工程 Agent",
+          "routes": [
+            "API",
+            "LOCAL"
+          ],
+          "entry": "https://tongyi.aliyun.com/",
+          "docs": "https://huggingface.co/Qwen",
+          "action": "先选 API 或本地；API 从百炼查当前型号；本地从 Qwen 官方集合进入精确模型卡，核对开放情况、硬件及专用依赖；按照该模态官方样例运行。",
+          "ready": "当前选定型号及模态实际产生有效结果。",
+          "note": "Max/Plus/Flash 等托管型号不保证有同名权重；不可凭名称拼接仓库。"
+        },
+        {
+          "id": "qwen-vl",
+          "name": "Qwen-VL / QVQ",
+          "purpose": "视觉理解、OCR、图表及视觉推理",
+          "routes": [
+            "API",
+            "LOCAL"
+          ],
+          "entry": "https://tongyi.aliyun.com/",
+          "docs": "https://huggingface.co/Qwen",
+          "action": "先选 API 或本地；API 从百炼查当前型号；本地从 Qwen 官方集合进入精确模型卡，核对开放情况、硬件及专用依赖；按照该模态官方样例运行。",
+          "ready": "当前选定型号及模态实际产生有效结果。",
+          "note": "Max/Plus/Flash 等托管型号不保证有同名权重；不可凭名称拼接仓库。"
+        },
+        {
+          "id": "qwen-omni",
+          "name": "Qwen-Omni",
+          "purpose": "文本、音频、视觉等多模态交互",
+          "routes": [
+            "API",
+            "LOCAL"
+          ],
+          "entry": "https://tongyi.aliyun.com/",
+          "docs": "https://huggingface.co/Qwen",
+          "action": "先选 API 或本地；API 从百炼查当前型号；本地从 Qwen 官方集合进入精确模型卡，核对开放情况、硬件及专用依赖；按照该模态官方样例运行。",
+          "ready": "当前选定型号及模态实际产生有效结果。",
+          "note": "Max/Plus/Flash 等托管型号不保证有同名权重；不可凭名称拼接仓库。"
+        },
+        {
+          "id": "qwen-image",
+          "name": "Qwen-Image",
+          "purpose": "图片生成和编辑",
+          "routes": [
+            "API",
+            "LOCAL"
+          ],
+          "entry": "https://tongyi.aliyun.com/",
+          "docs": "https://huggingface.co/Qwen",
+          "action": "先选 API 或本地；API 从百炼查当前型号；本地从 Qwen 官方集合进入精确模型卡，核对开放情况、硬件及专用依赖；按照该模态官方样例运行。",
+          "ready": "当前选定型号及模态实际产生有效结果。",
+          "note": "Max/Plus/Flash 等托管型号不保证有同名权重；不可凭名称拼接仓库。"
+        },
+        {
+          "id": "qwen-speech",
+          "name": "Qwen-TTS / ASR",
+          "purpose": "语音合成、识别",
+          "routes": [
+            "API",
+            "LOCAL"
+          ],
+          "entry": "https://tongyi.aliyun.com/",
+          "docs": "https://huggingface.co/Qwen",
+          "action": "先选 API 或本地；API 从百炼查当前型号；本地从 Qwen 官方集合进入精确模型卡，核对开放情况、硬件及专用依赖；按照该模态官方样例运行。",
+          "ready": "当前选定型号及模态实际产生有效结果。",
+          "note": "Max/Plus/Flash 等托管型号不保证有同名权重；不可凭名称拼接仓库。"
+        },
+        {
+          "id": "qwen-reasoning",
+          "name": "QwQ / Qwen 推理、Math 系列",
+          "purpose": "推理和数学；旧系列需查是否有当前替代",
+          "routes": [
+            "API",
+            "LOCAL"
+          ],
+          "entry": "https://tongyi.aliyun.com/",
+          "docs": "https://huggingface.co/Qwen",
+          "action": "先选 API 或本地；API 从百炼查当前型号；本地从 Qwen 官方集合进入精确模型卡，核对开放情况、硬件及专用依赖；按照该模态官方样例运行。",
+          "ready": "当前选定型号及模态实际产生有效结果。",
+          "note": "Max/Plus/Flash 等托管型号不保证有同名权重；不可凭名称拼接仓库。"
+        },
+        {
+          "id": "qwen-long",
+          "name": "Qwen-Long / Doc / Embedding / Rerank",
+          "purpose": "长文档、信息提取、检索向量与排序",
+          "routes": [
+            "API",
+            "LOCAL"
+          ],
+          "entry": "https://tongyi.aliyun.com/",
+          "docs": "https://huggingface.co/Qwen",
+          "action": "先选 API 或本地；API 从百炼查当前型号；本地从 Qwen 官方集合进入精确模型卡，核对开放情况、硬件及专用依赖；按照该模态官方样例运行。",
+          "ready": "当前选定型号及模态实际产生有效结果。",
+          "note": "Max/Plus/Flash 等托管型号不保证有同名权重；不可凭名称拼接仓库。"
+        },
+        {
+          "id": "wan-model",
+          "name": "Wan 开放模型",
+          "purpose": "本地图像/视频生成",
+          "routes": [
+            "LOCAL"
+          ],
+          "entry": "https://github.com/Wan-Video",
+          "docs": "https://github.com/Wan-Video",
+          "action": "从官方组织选择当前仓库与模型卡；按照显存选规格，下载官方权重，使用 README 的推理或受支持工作流。",
+          "ready": "本地产出可播放视频/可查看图片，并记录所选版本。",
+          "note": ""
+        },
+        {
+          "id": "cosyvoice",
+          "name": "CosyVoice",
+          "purpose": "语音合成与授权声音定制",
+          "routes": [
+            "LOCAL",
+            "API"
+          ],
+          "entry": "https://github.com/FunAudioLLM/CosyVoice",
+          "docs": "https://github.com/FunAudioLLM/CosyVoice",
+          "action": "按 README 建隔离环境并下载对应模型；安装音频依赖，先用预设音色推理；API 从百炼查对应服务。",
+          "ready": "合成短音频可播放。",
+          "note": ""
+        },
+        {
+          "id": "funasr",
+          "name": "Fun-ASR / FunASR",
+          "purpose": "本地语音识别",
+          "routes": [
+            "LOCAL",
+            "API"
+          ],
+          "entry": "https://github.com/modelscope/FunASR",
+          "docs": "https://github.com/modelscope/FunASR",
+          "action": "按当前官方文档选择模型和运行方式；安装独立环境及音频依赖；用自有短录音识别。",
+          "ready": "转写文本可读且与样例一致；不能用 TTS 成功代替 ASR。",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "google",
+      "name": "Google / Gemini",
+      "summary": "助手、研究、创作、搜索、编程与开放模型",
+      "products": [
+        {
+          "id": "gemini",
+          "name": "Gemini",
+          "purpose": "大众 AI 助手",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://gemini.google.com/",
+          "docs": "https://gemini.google.com/",
+          "action": "进入官方产品；按目标选对话、文件或 Live；手机端从官网跳商店，授权必要麦克风。",
+          "ready": "所选功能完成一轮任务。",
+          "note": ""
+        },
+        {
+          "id": "notebook",
+          "name": "Gemini Notebook（原 NotebookLM）",
+          "purpose": "基于来源的学习与研究",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://ai.google/products/",
+          "docs": "https://ai.google/products/",
+          "action": "沿官方研究产品入口新建笔记本；添加一份自有无隐私短文；询问该文要点，打开引用；音频概览另等生成完成。",
+          "ready": "答案引用对应来源，笔记本能重新打开。",
+          "note": ""
+        },
+        {
+          "id": "flow",
+          "name": "Google Flow",
+          "purpose": "AI 图像与视频创作",
+          "routes": [
+            "WEB"
+          ],
+          "entry": "https://labs.google/",
+          "docs": "https://labs.google/",
+          "action": "由官方目录进入 Flow；检查区域、套餐和积分；新建创作项目，选最小规格样例并生成。",
+          "ready": "预览真实生成结果；队列未完成不算可用。",
+          "note": ""
+        },
+        {
+          "id": "ai-search",
+          "name": "Google Search AI Mode",
+          "purpose": "AI 搜索",
+          "routes": [
+            "WEB"
+          ],
+          "entry": "https://www.google.com/",
+          "docs": "https://www.google.com/",
+          "action": "打开当前账户支持的 AI Mode；检索无敏感公开问题，展开来源并检查。",
+          "ready": "有答案与可打开来源；当前区域无入口则如实记录。",
+          "note": ""
+        },
+        {
+          "id": "antigravity",
+          "name": "Google Antigravity",
+          "purpose": "代理开发环境",
+          "routes": [
+            "APP",
+            "CLI"
+          ],
+          "entry": "https://antigravity.google/",
+          "docs": "https://antigravity.google/docs/",
+          "action": "从官网查当前桌面与 CLI 形态；匹配系统下载安装，登录；创建临时项目执行单文件分析。",
+          "ready": "代理有真实输出，项目和运行入口可复用。",
+          "note": ""
+        },
+        {
+          "id": "code-assist",
+          "name": "Gemini Code Assist",
+          "purpose": "IDE 编程辅助",
+          "routes": [
+            "EXT"
+          ],
+          "entry": "https://codeassist.google/",
+          "docs": "https://codeassist.google/",
+          "action": "从官方站点跳转对应编辑器市场；核对 Google 发行者；安装、登录，在临时项目请求解释代码。",
+          "ready": "编辑器内有回答或补全。",
+          "note": ""
+        },
+        {
+          "id": "jules",
+          "name": "Jules",
+          "purpose": "云端编程代理",
+          "routes": [
+            "WEB"
+          ],
+          "entry": "https://jules.google/",
+          "docs": "https://jules.google/",
+          "action": "核对当前产品状态；按最小范围连接用户授权测试仓库；创建只读分析任务；不要自动提交 PR。",
+          "ready": "完成任务有可检查结果；仓库权限仅覆盖所选范围。",
+          "note": ""
+        },
+        {
+          "id": "google-api",
+          "name": "Google AI Studio / Gemini API / Vertex AI",
+          "purpose": "模型体验和开发服务",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://aistudio.google.com/",
+          "docs": "https://ai.google.dev/gemini-api/docs",
+          "action": "选当前支持地区/项目；区分 AI Studio API key 与 Google Cloud 身份认证；读取对应 SDK 示例并执行。",
+          "ready": "所选模型有效输出；启用计费需要用户授权。",
+          "note": ""
+        },
+        {
+          "id": "gemma",
+          "name": "Gemma",
+          "purpose": "开放权重模型",
+          "routes": [
+            "LOCAL"
+          ],
+          "entry": "https://ai.google.dev/gemma",
+          "docs": "https://ai.google.dev/gemma",
+          "action": "按硬件选择精确模型；接受确实需要的模型许可流程；选择官方支持运行器，下载并推理。",
+          "ready": "本地模型产生内容，不依赖未经说明的云端 API。",
+          "note": ""
+        },
+        {
+          "id": "veo",
+          "name": "Veo",
+          "purpose": "视频生成",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://cloud.google.com/ai/generative-media",
+          "docs": "https://cloud.google.com/ai/generative-media",
+          "action": "从官方模型页找到支持该模型的体验产品或云端接口；检查权限、模型 ID 与区域；执行最小样例。",
+          "ready": "对应媒体可预览/播放；API 异步 ID 跟踪至成功。",
+          "note": "没有官方权重时不执行 LOCAL。"
+        },
+        {
+          "id": "imagen",
+          "name": "Imagen",
+          "purpose": "图像生成",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://cloud.google.com/ai/generative-media",
+          "docs": "https://cloud.google.com/ai/generative-media",
+          "action": "从官方模型页找到支持该模型的体验产品或云端接口；检查权限、模型 ID 与区域；执行最小样例。",
+          "ready": "对应媒体可预览/播放；API 异步 ID 跟踪至成功。",
+          "note": "没有官方权重时不执行 LOCAL。"
+        },
+        {
+          "id": "lyria",
+          "name": "Lyria",
+          "purpose": "音乐生成",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://cloud.google.com/ai/generative-media",
+          "docs": "https://cloud.google.com/ai/generative-media",
+          "action": "从官方模型页找到支持该模型的体验产品或云端接口；检查权限、模型 ID 与区域；执行最小样例。",
+          "ready": "对应媒体可预览/播放；API 异步 ID 跟踪至成功。",
+          "note": "没有官方权重时不执行 LOCAL。"
+        },
+        {
+          "id": "whisk",
+          "name": "Whisk / Google Labs 创作实验",
+          "purpose": "视觉参考与实验功能",
+          "routes": [
+            "WEB"
+          ],
+          "entry": "https://labs.google/",
+          "docs": "https://labs.google/",
+          "action": "核对当前实验列表；存在则进入并用自有样例创作；已迁移则沿官方 Flow 等链接。",
+          "ready": "当前服务产生结果；不存在时标记迁移而非伪造入口。",
+          "note": ""
+        },
+        {
+          "id": "workspace-ai",
+          "name": "Gemini in Workspace",
+          "purpose": "文档、表格、邮件和办公 AI",
+          "routes": [
+            "WEB",
+            "EXT"
+          ],
+          "entry": "https://workspace.google.com/",
+          "docs": "https://workspace.google.com/",
+          "action": "确认账户已有权限；在用户私人草稿中生成文档或表格内容；只保存草稿，不发邮件或共享。",
+          "ready": "宿主办公应用内出现可编辑内容。",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic / Claude",
+      "summary": "对话、编程、办公代理与模型 API",
+      "products": [
+        {
+          "id": "claude",
+          "name": "Claude",
+          "purpose": "聊天、写作、文档研究与 Artifacts",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://claude.ai/",
+          "docs": "https://claude.com/download",
+          "action": "官方登录，选择对话/研究/Artifacts；必要时从官方下载桌面或手机端；使用无敏感样例。",
+          "ready": "得到真实回复或可打开产物。",
+          "note": ""
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "purpose": "编程代理",
+          "routes": [
+            "CLI",
+            "APP",
+            "EXT"
+          ],
+          "entry": "https://code.claude.com/docs/en/overview",
+          "docs": "https://github.com/anthropics/claude-code",
+          "action": "按当前官方安装方式安装；确认 PATH/版本；官方账户或指定供应商登录；临时项目执行只读代码分析。",
+          "ready": "实际任务返回，明确是 Anthropic 模型还是用户选择的第三方模型。",
+          "note": ""
+        },
+        {
+          "id": "cowork",
+          "name": "Claude Cowork",
+          "purpose": "文件与跨应用办公代理",
+          "routes": [
+            "APP",
+            "WEB"
+          ],
+          "entry": "https://claude.com/resources/guides/claude-cowork-product-guide/product-overview",
+          "docs": "https://claude.com/resources/guides/claude-cowork-product-guide/product-overview",
+          "action": "在当前支持客户端/运行模式中进入 Cowork，授权一个临时目录；整理两份无隐私样例文档并生成汇总。",
+          "ready": "汇总文件可打开，目录授权范围清楚。",
+          "note": ""
+        },
+        {
+          "id": "claude-chrome",
+          "name": "Claude in Chrome",
+          "purpose": "浏览器交互",
+          "routes": [
+            "EXT"
+          ],
+          "entry": "https://claude.com/",
+          "docs": "https://claude.com/",
+          "action": "从官方产品/帮助中心进入扩展市场；核对 Anthropic 发行者；启用，登录，对公开页面做总结。",
+          "ready": "当前页面内容被正确读取；外部动作不默认授权。",
+          "note": ""
+        },
+        {
+          "id": "claude-office",
+          "name": "Claude 办公集成",
+          "purpose": "Office 等宿主内文档与表格辅助",
+          "routes": [
+            "EXT"
+          ],
+          "entry": "https://claude.com/",
+          "docs": "https://claude.com/",
+          "action": "从官方集成页查当前支持的宿主和套餐；安装官方加载项；用新的测试文档执行摘要或表格任务。",
+          "ready": "宿主内出现可编辑结果；没有授权不扫描全部网盘。",
+          "note": ""
+        },
+        {
+          "id": "claude-platform",
+          "name": "Claude Platform / Managed Agents",
+          "purpose": "模型和托管 Agent API",
+          "routes": [
+            "API",
+            "WEB"
+          ],
+          "entry": "https://platform.claude.com/",
+          "docs": "https://docs.anthropic.com/",
+          "action": "阅读当前 API 文档；创建正确组织/工作区下密钥；区分 Messages 与其他接口；托管 Agent 采用专用快速入门。",
+          "ready": "实际模型返回或托管任务完成，保存可复用配置。",
+          "note": ""
+        },
+        {
+          "id": "claude-models",
+          "name": "Opus / Sonnet / Haiku",
+          "purpose": "能力、均衡、速度成本分层",
+          "routes": [
+            "API",
+            "WEB"
+          ],
+          "entry": "https://platform.claude.com/docs/en/about-claude/models/overview",
+          "docs": "https://platform.claude.com/docs/en/about-claude/models/overview",
+          "action": "从当前目录选确切模型 ID；按预算、上下文及能力选择；在应用或 API 内执行样例。",
+          "ready": "确认实际模型可访问；不凭系列名假定所有套餐都有。",
+          "note": "闭源托管模型不走本地权重部署。"
+        }
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "summary": "聊天、Harness、API 与开放模型",
+      "products": [
+        {
+          "id": "deepseek-chat",
+          "name": "DeepSeek 网页与 App",
+          "purpose": "大众问答、推理和编程",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://www.deepseek.com/",
+          "docs": "https://www.deepseek.com/",
+          "action": "由官网进入对话或官方下载；登录，按需要开启当前推理/搜索功能；发送轻量任务。",
+          "ready": "回复成功，所需功能确实开启。",
+          "note": ""
+        },
+        {
+          "id": "deepseek-harness",
+          "name": "DeepSeek Harness",
+          "purpose": "可扩展 Agent 框架与桌面环境",
+          "routes": [
+            "APP",
+            "LOCAL"
+          ],
+          "entry": "https://www.deepseek.com/harness/",
+          "docs": "https://github.com/deepseek-ai/deepseek-harness",
+          "action": "沿官网进入原厂仓库/下载；按当前 README 准备运行时和独立配置；选择受支持模型并登录或接入密钥；运行临时目录任务。",
+          "ready": "任务有实际结果，重开后配置仍可用。",
+          "note": "只沿官网链路，不选名字相近的第三方桌面封装。"
+        },
+        {
+          "id": "deepseek-api",
+          "name": "DeepSeek API",
+          "purpose": "模型开发接入",
+          "routes": [
+            "API"
+          ],
+          "entry": "https://platform.deepseek.com/",
+          "docs": "https://api-docs.deepseek.com/",
+          "action": "查 API 文档与当前模型列表；申请密钥，配置官方 base URL；用文本兼容接口做轻量调用。",
+          "ready": "有效内容返回，区分模型系列与实际 API ID。",
+          "note": ""
+        },
+        {
+          "id": "deepseek-models",
+          "name": "DeepSeek 通用、推理与蒸馏开放模型",
+          "purpose": "本地语言与推理",
+          "routes": [
+            "LOCAL",
+            "API"
+          ],
+          "entry": "https://github.com/deepseek-ai",
+          "docs": "https://github.com/deepseek-ai",
+          "action": "从官方组织进入精确版本模型卡；按实际内存选择蒸馏/量化等版本，不盲目下载完整超大模型；启动匹配推理器。",
+          "ready": "本地推理成功；API 路线另按平台验证。",
+          "note": ""
+        },
+        {
+          "id": "deepseek-special",
+          "name": "DeepSeek-Coder / Math / VL / Janus 等研究模型",
+          "purpose": "代码、数学、视觉与图像研究",
+          "routes": [
+            "LOCAL"
+          ],
+          "entry": "https://github.com/deepseek-ai",
+          "docs": "https://github.com/deepseek-ai",
+          "action": "查所选仓库 README、许可证和维护状态；建立独立环境；下载确切权重，运行该模态官方示例。",
+          "ready": "专项样例成功；历史研究模型与当前在线产品分开记录。",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "kimi",
+      "name": "月之暗面 / Kimi",
+      "summary": "助手、办公、编程、浏览器和模型",
+      "products": [
+        {
+          "id": "kimi",
+          "name": "Kimi",
+          "purpose": "问答、文档与 Agent 工作台",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://www.kimi.com/",
+          "docs": "https://www.kimi.com/",
+          "action": "从官网进入账户；选择对话或文档任务；需要客户端从官方产品页下载安装。",
+          "ready": "回复或文档任务实际成功。",
+          "note": ""
+        },
+        {
+          "id": "kimi-work",
+          "name": "Kimi Work",
+          "purpose": "桌面办公与跨网页任务",
+          "routes": [
+            "APP"
+          ],
+          "entry": "https://www.kimi.com/products/",
+          "docs": "https://www.kimi.com/products/",
+          "action": "进入 Work 官方下载和指南；匹配系统，登录；只授权样例目录，完成一份简短汇总。",
+          "ready": "本地/云端产物可打开并明确运行位置。",
+          "note": ""
+        },
+        {
+          "id": "kimi-code",
+          "name": "Kimi Code",
+          "purpose": "CLI、桌面和 VS Code 编程",
+          "routes": [
+            "CLI",
+            "APP",
+            "EXT"
+          ],
+          "entry": "https://www.kimi.com/code/docs/en/",
+          "docs": "https://www.kimi.com/code/docs/en/kimi-code-cli/guides/getting-started",
+          "action": "先读当前快速入门；编写时官方 CLI 已转为 Node.js 体系，不能照旧 Python/uv 安装；选择当前官方安装方式，登录并运行临时项目。",
+          "ready": "实际任务成功，CLI/扩展/桌面按选定形态分别验收。",
+          "note": ""
+        },
+        {
+          "id": "kimi-browser",
+          "name": "Kimi 浏览器扩展",
+          "purpose": "网页读取与交互",
+          "routes": [
+            "EXT"
+          ],
+          "entry": "https://www.kimi.com/products/",
+          "docs": "https://www.kimi.com/products/",
+          "action": "沿产品页进入浏览器扩展；核对发行者，安装启用；在公开页面执行归纳任务。",
+          "ready": "扩展能读取当前页面并返回相关结果。",
+          "note": ""
+        },
+        {
+          "id": "kimi-office",
+          "name": "Kimi Office",
+          "purpose": "WPS 文档、表格和演示文稿",
+          "routes": [
+            "EXT"
+          ],
+          "entry": "https://www.kimi.com/products/",
+          "docs": "https://www.kimi.com/products/",
+          "action": "按官方 Office/WPS 扩展指南安装；登录，创建临时文档/表格，运行一个编辑任务。",
+          "ready": "WPS 内出现可编辑结果；宿主版本满足要求。",
+          "note": ""
+        },
+        {
+          "id": "kimi-features",
+          "name": "Kimi Research / Slides / Docs / Sheets / Build / Agent Swarm",
+          "purpose": "研究、PPT、文档、表格、建站与协同任务",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://www.kimi.com/products/",
+          "docs": "https://www.kimi.com/products/",
+          "action": "按所选功能创建独立样例：研究查来源、PPT 生成三页、表格计算三行虚构数据、Build 生成简单页面并预览；集群用最小任务。",
+          "ready": "验收所选专项产物，网站只预览不自动公开。",
+          "note": ""
+        },
+        {
+          "id": "kimi-platform",
+          "name": "Kimi / Moonshot 开放平台",
+          "purpose": "模型 API",
+          "routes": [
+            "API"
+          ],
+          "entry": "https://platform.kimi.com/",
+          "docs": "https://platform.kimi.com/",
+          "action": "沿产品页确认当前平台域名与地区；区分普通 API、Kimi Code 订阅接口；从当前文档读取模型及端点。",
+          "ready": "普通 API 或受支持编码工具任务真正成功，不混用套餐。",
+          "note": ""
+        },
+        {
+          "id": "kimi-models",
+          "name": "Kimi 开放模型",
+          "purpose": "本地推理与研究",
+          "routes": [
+            "LOCAL"
+          ],
+          "entry": "https://huggingface.co/moonshotai",
+          "docs": "https://huggingface.co/moonshotai",
+          "action": "选择官方已开放版本；按许可证、架构、内存判断本机是否适配；用模型卡支持的引擎部署。",
+          "ready": "本地真实推理；完整大模型不适配时说明所需资源，别假称 CPU 能流畅运行。",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "xai",
+      "name": "xAI / Grok",
+      "summary": "助手、实时信息、图像视频和语音",
+      "products": [
+        {
+          "id": "grok",
+          "name": "Grok / X 内 Grok",
+          "purpose": "大众问答与实时信息",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://grok.com/",
+          "docs": "https://x.ai/",
+          "action": "通过官方网页/App 或用户已登录 X 的 Grok 入口；创建对话，按用途开启搜索/推理。",
+          "ready": "有效回复；实时信息任务打开来源检查。",
+          "note": ""
+        },
+        {
+          "id": "grok-imagine",
+          "name": "Grok Imagine",
+          "purpose": "图像与视频生成编辑",
+          "routes": [
+            "WEB",
+            "APP",
+            "API"
+          ],
+          "entry": "https://x.ai/api/imagine",
+          "docs": "https://x.ai/api/imagine",
+          "action": "个人用户进入 Grok 的 Imagine；开发者按当前 API 文档；选最小样例，视频保存任务 ID 并跟踪。",
+          "ready": "真实图片/视频可预览，API 返回的 URL 可访问或产物已保存。",
+          "note": ""
+        },
+        {
+          "id": "grok-voice",
+          "name": "Grok Voice",
+          "purpose": "语音交互与语音 API",
+          "routes": [
+            "WEB",
+            "APP",
+            "API"
+          ],
+          "entry": "https://x.ai/api",
+          "docs": "https://x.ai/api",
+          "action": "官方应用授权麦克风完成一轮语音；API 使用官方 Voice 文档的实时协议或 TTS/STT 示例，不套文本接口。",
+          "ready": "所选语音功能真正完成输入输出。",
+          "note": ""
+        },
+        {
+          "id": "grok-api",
+          "name": "Grok API：文本、代码、Web/X Search、文件",
+          "purpose": "开发接入",
+          "routes": [
+            "API"
+          ],
+          "entry": "https://docs.x.ai/",
+          "docs": "https://docs.x.ai/",
+          "action": "选择当前模型，创建项目密钥；文本最小调用；搜索需启用官方工具，文件需按接口上传虚构样例。",
+          "ready": "所选能力有真实结果，搜索包含可核对来源。",
+          "note": ""
+        },
+        {
+          "id": "grok-open",
+          "name": "已开放的 Grok 历史权重",
+          "purpose": "研究与自建推理",
+          "routes": [
+            "LOCAL"
+          ],
+          "entry": "https://github.com/xai-org",
+          "docs": "https://github.com/xai-org",
+          "action": "只选择官方明确提供的权重及其 README；评估巨大模型硬件；最新在线 Grok 不默认开放。",
+          "ready": "精确版本本地运行，明确其与线上当前服务的区别。",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax / 海螺",
+      "summary": "Agent、编程、设计、视频、音频音乐与角色互动",
+      "products": [
+        {
+          "id": "minimax-agent",
+          "name": "MiniMax Agent / MiniMax Code",
+          "purpose": "工作代理与编程",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://www.minimax.io/",
+          "docs": "https://www.minimax.io/",
+          "action": "从官网产品菜单进入当前 Agent/Code；使用临时任务，编程生成单个示例，工作任务用虚构资料。",
+          "ready": "产物或代码可打开；旧 Agent 名称按当前官方产品映射。",
+          "note": ""
+        },
+        {
+          "id": "minimax-design",
+          "name": "MiniMax Design",
+          "purpose": "视觉设计和多模态创作",
+          "routes": [
+            "WEB"
+          ],
+          "entry": "https://design.minimax.io/",
+          "docs": "https://design.minimax.io/",
+          "action": "登录，新建简短设计任务；用无商标自然场景或虚构品牌生成样例。",
+          "ready": "设计产物可预览，下载需求检查导出。",
+          "note": ""
+        },
+        {
+          "id": "hailuo",
+          "name": "海螺 AI / Hailuo",
+          "purpose": "视频创作",
+          "routes": [
+            "WEB",
+            "APP",
+            "API"
+          ],
+          "entry": "https://www.minimax.io/",
+          "docs": "https://www.minimax.io/",
+          "action": "从官网/官方公司目录沿海螺入口进入；选择最低规格短视频，检查额度后提交一次；API 使用当前模型文档。",
+          "ready": "视频成功且可播放，不使用第三方同名海螺站。",
+          "note": ""
+        },
+        {
+          "id": "minimax-audio",
+          "name": "MiniMax Audio",
+          "purpose": "配音、声音与音乐创作",
+          "routes": [
+            "WEB",
+            "API"
+          ],
+          "entry": "https://www.minimax.io/audio",
+          "docs": "https://www.minimax.io/audio",
+          "action": "从当前官方菜单选 Audio；先用预置音色合成短句；音乐选最短支持样例；声音克隆需明确授权。",
+          "ready": "音频可播放；音乐 API 是否仍开放以当日文档为准。",
+          "note": ""
+        },
+        {
+          "id": "talkie",
+          "name": "Talkie / 星野相关地区产品",
+          "purpose": "AI 角色互动",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://www.minimax.io/",
+          "docs": "https://ir.minimax.io/corporate-information/company-profile",
+          "action": "从官网公司产品目录或官方发行者商店链接进入适合地区的角色应用；登录，选现有角色进行普通对话。",
+          "ready": "角色产生有效回复；国内外应用与账号权益分别核对。",
+          "note": ""
+        },
+        {
+          "id": "minimax-api",
+          "name": "MiniMax 开放平台 / Coding Plan",
+          "purpose": "文本、视频、语音、音乐等接入",
+          "routes": [
+            "API",
+            "WEB"
+          ],
+          "entry": "https://platform.minimax.io/",
+          "docs": "https://platform.minimax.io/",
+          "action": "核对国内国际平台、账户、按量与编码套餐；从当前文档选择端点和精确模型；文本/媒体按专用接口调用。",
+          "ready": "所选模型/模态真实成功；不以旧文档认定免费音乐 API 可用。",
+          "note": ""
+        },
+        {
+          "id": "minimax-models",
+          "name": "MiniMax M 系列 / H3 / 已开放媒体模型",
+          "purpose": "开放权重与专用推理",
+          "routes": [
+            "LOCAL",
+            "API"
+          ],
+          "entry": "https://www.minimax.io/",
+          "docs": "https://www.minimax.io/",
+          "action": "从官方 Research/模型页进入发布仓库和模型卡；逐个确认是否开放，选择硬件匹配的版本；按对应语言或媒体运行器部署。",
+          "ready": "所选版本实际推理成功，云端专有模型不伪装成本地。",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "zhipu",
+      "name": "智谱 / GLM",
+      "summary": "清言、自动操作、编程、视觉和开放模型",
+      "products": [
+        {
+          "id": "qingyan",
+          "name": "智谱清言 / Z.ai Chat",
+          "purpose": "大众助手、文档、研究与办公",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://chatglm.cn/",
+          "docs": "https://z.ai/",
+          "action": "国内清言从官网进入；国际 Z.ai 从 z.ai 官方链接进入；登录选任务/对话，使用公开或虚构样例。",
+          "ready": "当前账户返回结果；研究/文档专项另检查产物。",
+          "note": ""
+        },
+        {
+          "id": "autoglm",
+          "name": "AutoGLM",
+          "purpose": "自动操作与任务代理",
+          "routes": [
+            "WEB",
+            "APP"
+          ],
+          "entry": "https://chatglm.cn/",
+          "docs": "https://chatglm.cn/",
+          "action": "从官方当前产品页面找到 AutoGLM 形态；完成账户与设备授权；只做读取公开信息等无外部副作用任务。",
+          "ready": "实际任务完成，操作目标与权限清楚。",
+          "note": ""
+        },
+        {
+          "id": "open-autoglm",
+          "name": "Open-AutoGLM",
+          "purpose": "手机操作模型与框架",
+          "routes": [
+            "PHONE",
+            "LOCAL"
+          ],
+          "entry": "https://github.com/zai-org/Open-AutoGLM",
+          "docs": "https://github.com/zai-org/Open-AutoGLM",
+          "action": "读 README 安装隔离 Python 环境及依赖；官方平台工具配置 ADB、设备授权与输入法；模型用官方支持 API 或本地服务；先确认 adb devices 和目标屏幕。",
+          "ready": "只打开系统设置/读取设备信息等低风险任务成功，保存启动入口。",
+          "note": "不自动开启无线公网调试，不点击支付、发送消息或删除，不把云端容器冒充手机。"
+        },
+        {
+          "id": "zcode",
+          "name": "ZCode",
+          "purpose": "AI 编程工具",
+          "routes": [
+            "APP",
+            "CLI"
+          ],
+          "entry": "https://zcode.z.ai/",
+          "docs": "https://zcode.z.ai/en/docs/configuration",
+          "action": "从官方文档检查当前产品形态和系统支持；安装后选择 Z.ai 编码套餐或官方支持供应商，完成登录；临时仓库做分析。",
+          "ready": "代码任务真实完成，明确模型和计费渠道。",
+          "note": ""
+        },
+        {
+          "id": "glm-coding",
+          "name": "GLM Coding Plan / Coding Tool Helper",
+          "purpose": "编码工具订阅接入",
+          "routes": [
+            "CLI",
+            "API"
+          ],
+          "entry": "https://docs.bigmodel.cn/cn/coding-plan/overview",
+          "docs": "https://docs.bigmodel.cn/cn/coding-plan/extension/coding-tool-helper",
+          "action": "确定国内/国际与个人/团队计划；从官方指定工具列表选择；可按官方文档运行 npx @z_ai/coding-helper，先检查包来源与当前指令；只修改选定工具局部配置。",
+          "ready": "指定编码工具完成任务；普通文本 API 不消耗该套餐来伪造测试。",
+          "note": ""
+        },
+        {
+          "id": "bigmodel",
+          "name": "智谱开放平台 / Z.ai API",
+          "purpose": "通用、视觉、图像、视频与语音 API",
+          "routes": [
+            "API",
+            "WEB"
+          ],
+          "entry": "https://bigmodel.cn/",
+          "docs": "https://docs.z.ai/",
+          "action": "核对区域、组织和按量服务；读官方快速入门获取端点与密钥；所需视觉/媒体用专用请求格式。",
+          "ready": "相应能力输出成功，普通 API 与 Coding Plan 分别确认。",
+          "note": ""
+        },
+        {
+          "id": "glm-models",
+          "name": "GLM 通用、推理、编程、GLM-V 视觉与语音模型",
+          "purpose": "API 与本地开放模型",
+          "routes": [
+            "LOCAL",
+            "API"
+          ],
+          "entry": "https://huggingface.co/zai-org",
+          "docs": "https://huggingface.co/zai-org",
+          "action": "按能力和硬件选择明确版本；视觉模型用配套 processor 和模型卡示例，语音按专用依赖；API 查看当前目录。",
+          "ready": "所选模态实际成功，开放许可逐版本确认。",
+          "note": ""
+        },
+        {
+          "id": "cogview",
+          "name": "CogView / GLM 图像模型",
+          "purpose": "图片生成",
+          "routes": [
+            "LOCAL",
+            "API"
+          ],
+          "entry": "https://github.com/THUDM",
+          "docs": "https://github.com/THUDM",
+          "action": "从官方组织或智谱当前文档寻找 CogView 精确仓库；按 README 安装官方推理依赖和权重，或使用当前托管接口。",
+          "ready": "生成的图片可预览；旧系列状态需核对。",
+          "note": ""
+        },
+        {
+          "id": "cogvideo",
+          "name": "CogVideoX / 清影",
+          "purpose": "视频模型与大众视频入口",
+          "routes": [
+            "LOCAL",
+            "WEB",
+            "API"
+          ],
+          "entry": "https://github.com/THUDM/CogVideo",
+          "docs": "https://github.com/THUDM/CogVideo",
+          "action": "本地按仓库选择 CogVideoX 权重与显存；网页从清言进入清影（如当前仍提供）；API 读取开放平台视频文档。",
+          "ready": "最短样例视频可播放；区分清影应用与 CogVideoX 模型。",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}
